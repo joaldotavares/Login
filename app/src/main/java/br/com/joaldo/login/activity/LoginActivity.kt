@@ -1,4 +1,4 @@
-package br.com.joaldo.login
+package br.com.joaldo.login.activity
 
 import android.app.Activity
 import android.content.Intent
@@ -6,12 +6,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import br.com.joaldo.login.R
 import br.com.joaldo.login.user.User
 
 class LoginActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Thread.sleep(3000)
         setContentView(R.layout.activity_login)
         val username = findViewById<EditText>(R.id.login_username)
         val password = findViewById<EditText>(R.id.login_password)
@@ -20,6 +20,9 @@ class LoginActivity : Activity() {
         btnSignIn.setOnClickListener {
             loadActivity(username, password)
         }
+
+        val intent = Intent(this, RegisterActivity::class.java)
+        startActivity(intent)
     }
 
     private fun loadActivity(username: EditText, password: EditText) {
@@ -34,7 +37,6 @@ class LoginActivity : Activity() {
             intent.putExtra("username", user.username)
             intent.putExtra("password", user.password)
             startActivity(intent)
-            finish()
         } else {
             Toast.makeText(this, "Coloca alguma coisa ai parça", Toast.LENGTH_LONG).show()
         }

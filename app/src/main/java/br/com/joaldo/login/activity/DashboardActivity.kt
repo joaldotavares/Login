@@ -1,8 +1,9 @@
-package br.com.joaldo.login
+package br.com.joaldo.login.activity
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import br.com.joaldo.login.R
 import br.com.joaldo.login.R.id
 
 class DashboardActivity : AppCompatActivity() {
@@ -13,10 +14,10 @@ class DashboardActivity : AppCompatActivity() {
         val username = findViewById<TextView>(id.dashboard_username)
         val password = findViewById<TextView>(id.dashboard_password)
 
-        val buser: Bundle = intent.extras!!
+        val bundle: Bundle = intent.extras!!
 
-        username.text = buser.getString("username")
-        password.text = buser.getString("password")
+        username.text = bundle.getString("username")
+        password.text = bundle.getString("password")
 
     }
 }

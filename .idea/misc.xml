@@ -4,13 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/background_activity.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/background_activity_login.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/drawable/background_botao.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/background_button_login.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/background_button_register.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/drawable/background_campos.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/background_fields_login.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/background_fields_register.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/drawable/splash_background.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/activity_cadastro.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.13043478260869565" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.25" />
       </map>
     </option>
   </component>
