@@ -2,4 +2,5 @@
     <string name="app_name">login</string>
     <string name="imagem_de_fundo_do_aplicativo">imagem de fundo do aplicativo</string>
     <string name="logomarca_tela_login">logomarca da tela de login</string>
+    <string name="username">Username</string>
 </resources>
